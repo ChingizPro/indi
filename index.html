@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="root">
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <a href="#" class="sidebar__logo-link">
+                <img src="./images/indi-logo.svg" alt="indi-logo" class="sidebar__logo">
+            </a>
+            <button class="sidebar__button">
+                <i class="sidebar__icon fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="sidebar__button">
+                <i class="sidebar__icon fa-solid fa-film"></i>
+            </button>
+            <button class="sidebar__button">
+                <i class="sidebar__icon fa-solid fa-star"></i>
+            </button>
+            <button class="sidebar__button">
+                <i class="sidebar__icon fa-solid fa-user"></i>
+            </button>
+        </div>
         <div class="main"></div>
     </div>
 </body>
