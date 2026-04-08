@@ -69,3 +69,17 @@ img {
 .posters--top {
     margin-bottom: 81px;
 }
+.bottom {
+    padding-left: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #080808;
+    color: white;
+}
+.bottom__box {
+    width: 517px;
+}
+.bottom__image {
+    width: 500px;
+}
