@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -37,6 +40,13 @@
         </button>
       </aside>
       <main class="main">
+        <div class="mobile-header">
+          <img
+            src="./images/indi-logo.svg"
+            alt="indi-logo"
+            class="hidden-logo"
+          />
+        </div>
         <header class="home">
           <article class="home__box">
             <h1 class="home__title">SAM AWAY</h1>
@@ -188,16 +198,38 @@
           <article class="bottom__box">
             <h2 class="bottom__title">Stay Connected</h2>
             <p class="bottom__text">
-              From cult classics to modern masterpieces. <br> Stay updated with the
-              latest movies, news and articles from INDI.
+              From cult classics to modern masterpieces. <br />
+              Stay updated with the latest movies, news and articles from INDI.
             </p>
             <form class="bottom__form">
-                <input type="email" class="bottom__input" placeholder="Your Email">
-                <button class="bottom__button">Submit</button>
+              <input
+                type="email"
+                class="bottom__input"
+                placeholder="Your Email"
+              />
+              <button class="bottom__button">Submit</button>
             </form>
           </article>
-          <img src="./images/gif-cinema.png" alt="gif-cinema" class="bottom__image">
+          <img
+            src="./images/gif-cinema.png"
+            alt="gif-cinema"
+            class="bottom__image"
+          />
         </footer>
+        <div class="hidden-menu">
+          <button class="sidebar__button">
+            <i class="sidebar__icon fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="sidebar__button">
+            <i class="sidebar__icon fa-solid fa-film"></i>
+          </button>
+          <button class="sidebar__button">
+            <i class="sidebar__icon fa-solid fa-star"></i>
+          </button>
+          <button class="sidebar__button">
+            <i class="sidebar__icon fa-solid fa-user"></i>
+          </button>
+        </div>
       </main>
     </div>
   </body>

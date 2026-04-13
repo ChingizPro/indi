@@ -38,6 +38,17 @@ button {
 .main {
   flex-grow: 1;
 }
+.mobile-header {
+  height: 243px;
+  padding: 20px 26px;
+  background-image: url("./images/fallback-img.png");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+.hidden-logo {
+  width: 34px;
+}
 .home {
   padding: 26px 46px 107px;
   background-image: url("./images/fallback-img.png");
@@ -162,43 +173,159 @@ button {
 .bottom__image {
   width: 500px;
 }
+.hidden-menu {
+  display: none;
+  background-color: #131313;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 26px;
+}
 
 @media screen and (max-width: 1150px) {
-    .bottom__title {
-        font-size: 30px;
-    }
-    .bottom__text {
-        font-size: 11px;
-    }
-    .bottom__input {
-        width: 209px;
-    }
-    .bottom__image {
-        width: 284px;
-        height: 270px;
-        object-fit: cover;
-    }
+  .bottom__title {
+    font-size: 30px;
+  }
+  .bottom__text {
+    font-size: 11px;
+  }
+  .bottom__input {
+    width: 209px;
+  }
+  .bottom__image {
+    width: 284px;
+    height: 270px;
+    object-fit: cover;
+  }
 }
 @media screen and (max-width: 768px) {
-    .sidebar {
-        width: 64px;
-        padding: 19px 16px;
-    }
-    .movies-section {
-        padding: 59px 33px;
-    }
-    .posters {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .bottom {
-        padding-left: 33px;
-        justify-content: space-between;
-    }
-    .bottom__box {
-        width: 65%;
-        flex-shrink: 0;
-    }
-    .bottom__image {
-        width: 32%;
-    }
+  .sidebar {
+    width: 64px;
+    padding: 19px 16px;
+  }
+  .home {
+    padding: 23px 33px 50px;
+  }
+  .home__title {
+    font-size: 50px;
+    line-height: 74px;
+    margin-bottom: 1px;
+  }
+  .home__info {
+    font-size: 10px;
+    line-height: 19px;
+    margin-bottom: 14px;
+  }
+  .home__text {
+    font-size: 11px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  .home__staff {
+    font-size: 10px;
+    line-height: 19px;
+    margin-bottom: 26px;
+  }
+  .home__link {
+    font-size: 11px;
+    line-height: 22px;
+    padding: 11px 18px;
+  }
+  .movies-section {
+    padding: 59px 33px;
+  }
+  .posters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .bottom {
+    padding-left: 33px;
+    justify-content: space-between;
+  }
+  .bottom__box {
+    width: 65%;
+    flex-shrink: 0;
+  }
+  .bottom__image {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .bottom {
+    padding: 37px 27px 32px;
+    background-image: url("./images/gif-cinema.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .bottom__box {
+    width: 100%;
+  }
+  .bottom__image {
+    display: none;
+  }
+}
+@media screen and (max-width: 460px) {
+  .home {
+    background-image: none;
+    background-color: black;
+    padding: 16px 26px 34px;
+  }
+  .home__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .home__info {
+    font-size: 8px;
+    line-height: 15px;
+    margin-bottom: 9px;
+  }
+  .home__text {
+    font-size: 10px;
+    line-height: 18px;
+    margin-bottom: 9px;
+  }
+  .home__staff {
+    font-size: 8px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+  .home__link {
+    font-size: 10px;
+    line-height: 18px;
+    padding: 7px 15px;
+    border-width: 1px;
+  }
+  .movies-section {
+    padding: 38px 26px;
+  }
+  .movies-section__title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  .posters {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px 10px;
+  }
+  .posters--top {
+    margin-bottom: 38px;
+  }
+  .bottom__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mobile-header {
+    display: block;
+  }
+  .home {
+    background-image: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .hidden-menu {
+    display: flex;
+  }
 }
